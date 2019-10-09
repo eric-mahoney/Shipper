@@ -21,7 +21,7 @@ This project is currently in development. Users can add new customers, multiple 
 
 Clone down this repository. You will need `python3` and `django` installed globally on your machine.  
 
-To Start Server:
+To Start Server, navigation to ORM application sub-folder and run:
 
 `python3 manage.py runserver`  
 
