@@ -31,7 +31,7 @@ To Visit App:
 
 ## Reflection
 
-This is a multi-week long project for my IT-409 (Django Web Development) class. All of the requirements for the project's models and implementations were given to me to as part of the project requirements.
+This is a week long project for my IT-409 (Django Web Development) class. All of the requirements for the project's models and implementations were given to me to as part of the project requirements.
 
 During the course of this project, I gained proficiency in Django's MTV architecture by creating and implementing multiple different models, templates, and views. I also was able to gain experience using Bootstrap to create a responsive, flexible web application.
 
