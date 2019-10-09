@@ -1,7 +1,5 @@
 ## Django-Order-Form-App
 
-#### Example:
-
 An application used to store user information in a SQLlite database for easy retrieval. This application could be use by a local store to keep on track of orders and manage their progress.
 
 ## Project Status
@@ -20,8 +18,6 @@ This project is currently in development. Users can add new customers, multiple 
 ![screenshot](/screenshot/index_screenshot.png)
 
 ## Installation and Setup Instructions
-
-#### Example:  
 
 Clone down this repository. You will need `python3` and `django` installed globally on your machine.  
 
