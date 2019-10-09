@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="body-wrapper">
+        <h1 class="heading">Add Details to an Order:</h1>
+        <div class="form-wrapper">
+            <form class="form" action="{% url 'createorderdetails' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.order.errors }}
+                    <label for="{{ form.order.id_for_label }}">Order</label>
+                    {{ form.order }}
+                </div>
+                <div class="form-group">
+                    {{ form.product_name.errors }}
+                    <label for="{{ form.product_name.id_for_label }}">Product Name</label>
+                    {{ form.product_name }}
+                </div>
+                <div class="form-group">
+                    {{ form.quantity.errors }}
+                    <label for="{{ form.quantity.id_for_label }}">Quantity</label>
+                    {{ form.quantity }}
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="create order details">
+                <div class="form-group">
+            </form>
+        </div>
+    </div>
+{% endblock %}

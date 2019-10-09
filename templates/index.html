@@ -1,0 +1,60 @@
+    
+{% extends 'base.html' %}
+{% block content %}
+    <h2 class="heading">Assignment 3 - Develop a Create Page </h2>
+    <main class="main-information">
+    {% for item in db %}
+    <div class="customer-wrapper">
+      <div class="customer-info">
+        <h2>{{ item.first_name }} {{ item.last_name }}</h2>
+        {% for address in item.addresses %}
+          <h3>{{ address.street }}, {{ address.city }}, {{ address.state}} {{ address.zipcode }}</h3>
+        {% endfor %}
+      </div>
+      <div class="customer-orders">
+        <h3>Orders:</h3>
+        <table>
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Order Number</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Payment Method</th>
+                  <th scope="col">Account Number</th>
+                  <th scope="col">Security Code</th>
+                  <th scope="col">Order Total</th>
+                </tr>
+              </thead>
+              <tbody class="table-striped">
+              {% for order in item.orders %}
+                <tr>
+                  <th scope="row">{{ order.order_number }}</th>
+                  <th scope="row">{{ order.date }}</th>
+                  <th scope="row">
+                  {% for order_details in order.order_details %}
+                    {{ forloop.counter }} - {{order_details.product_name }}
+                    <br/>
+                  {% endfor %}
+                  </th>
+                  <th scope="row">
+                  {% for order_details in order.order_details %}
+                    {{ order_details.quantity }}
+                    <br/>
+                  {% endfor %}
+                  </th>
+                  <th scope="row">{{ order.payment_method }}</th>
+                  <th scope="row">{{ order.acct_number }}</th>
+                  <th scope="row">{{ order.security_code }}</th>
+                  <th scope="row">{{ order.order_total }}</th>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </table>
+      </div>
+    </div>
+    {% endfor %}
+    </main>
+{% endblock %}
