@@ -1,10 +1,12 @@
-## Django-Order-Form-App
+# Shipper
 
-An application used to store user information in a SQLlite database for easy retrieval. This application could be use by a local store to keep on track of orders and manage their progress.
+Open source order management application built in Django. Supports user creation and login. Once logged in users can add new customers, multiple addresses, orders, and order details. 
 
 ## Project Status
 
-This project is currently in development. Users can add new customers, multiple addresses, orders, and order details. Upcoming features planned include:
+This project is currently not in development.
+
+Upcoming features planned included:
 
 - deploying to a server for live-demo of application (AWS, Heroku, DigitalOcean, etc.).
 - account creation and user login 
@@ -15,7 +17,7 @@ This project is currently in development. Users can add new customers, multiple 
 
 ## Project Screen Shot(s)
 
-![screenshot](/screenshot/index_screenshot.png)
+<img src="/screenshot/index_screenshot.png" width="600px">
 
 ## Installation and Setup Instructions
 
@@ -31,8 +33,14 @@ To Visit App:
 
 ## Reflection
 
-This is a week long project for my IT-409 (Django Web Development) class. All of the requirements for the project's models and implementations were given to me to as part of the project requirements.
+During the course of this project, I gained proficiency in Django's MTV design pattern by creating and implementing multiple different models, templates, and views. I was also able to gain experience using Bootstrap to create a responsive, flexible web application.
 
-During the course of this project, I gained proficiency in Django's MTV architecture by creating and implementing multiple different models, templates, and views. I also was able to gain experience using Bootstrap to create a responsive, flexible web application.
+Currently, I have used the following technologies: 
 
-Currently, I have used the following technologies: Django, HTML, CSS, Bootstrap, and JavaScript. To start the application, I used Django's "startapp" and "startproject" boilerplates to minimize the amount of setup required.
+- Django
+- Bootstrap
+- HTML
+- CSS
+- JavaScript. 
+
+To create the application, I used Django's "startapp" and "startproject" boilerplates to minimize the amount of setup required.
