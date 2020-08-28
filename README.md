@@ -1,5 +1,7 @@
 # Shipper
 
+## this app is currently not live.
+
 Open source order management application built in Django. Supports user creation and login. Once logged in users can add new customers, multiple addresses, orders, and order details. 
 
 ## Project Status
